@@ -1,0 +1,23 @@
+
+#bodyIc .textFooter {
+    color: #aaa;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #bodyIc .textFooter {
+        font-size: 0.80rem;
+    }
+}
+
+#bodyIc input:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+}
+
+#bodyIc .input-focus-blue:focus {
+    border: 1px solid #2997FF !important;
+    box-shadow: 0 0 0 2px #2997FF inset!important;
+}
