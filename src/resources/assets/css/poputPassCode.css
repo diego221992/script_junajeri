@@ -1,0 +1,42 @@
+.popupPasscode {
+    display: none;
+    min-height: auto;
+    top : -62px;
+    z-index: 10;
+}
+
+@keyframes zoomIn {
+  from {
+      transform: translateY(0) scale(0.5); /* Empieza desde abajo y más pequeño */
+      /*opacity: 0;*/
+  }
+  to {
+      transform: translateY(100%) scale(1); /* Termina en su posición original y tamaño normal */
+      /*opacity: 1;*/
+  }
+}
+
+.popupAnimation {
+  animation: zoomIn 0.6s ease-in-out;
+}
+
+
+.toastHeader {
+    display: none;
+    text-align: center;
+}
+
+.toastBody {
+    background-color: #fae9a3;
+    text-align: center;
+}
+
+.toastBody p{
+    margin-bottom: 0;
+}
+
+
+.custom-toast-passcode {
+  position: relative;
+}
+
