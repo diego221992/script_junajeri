@@ -1,0 +1,48 @@
+.faceid-modal-content {
+    background-color: #232323 !important;
+    border-radius: 16px !important;
+    width: 300px !important;
+    padding: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faceid-modal-backdrop {
+    background-color: rgba(30, 30, 30, 0.5) !important;
+    /* Controla el fondo de pantalla del modal */
+    backdrop-filter: blur(2px);
+}
+
+.vibrate {
+    animation: vibrate 0.5s linear;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-6px);
+    }
+
+    40% {
+        transform: translateX(6px);
+    }
+
+    60% {
+        transform: translateX(-4px);
+    }
+
+    80% {
+        transform: translateX(4px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
