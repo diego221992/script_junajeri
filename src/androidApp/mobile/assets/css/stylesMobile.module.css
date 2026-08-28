@@ -1,0 +1,110 @@
+.containerFluid {
+    overflow-x: hidden;
+}
+
+.footerColor {
+    background: #101318;
+}
+
+.shifted {
+    margin-top: 280px;
+    /* ajusta según el contenido expandido */
+}
+
+.colorFooter {
+    background: #1D2025;
+    padding: 10px 0;
+}
+
+.devicesActive {
+    background: #808080b5;
+    border-radius: 25px;
+    width: 60px;
+    height: 35px;
+    padding-top: 5px;
+}
+
+
+
+.iconsFooter {
+    color: #C1C5CE;
+    margin-bottom: 0;
+}
+
+
+.textColorIcons {
+    background: #26292E;
+    color: #C9DAEA;
+}
+
+.show {
+    max-height: 280px;
+    /* ajusta según el contenido */
+}
+
+.minWidth {
+    min-width: 150px;
+    max-width: 200px;
+    background: #374857;
+    color: #C9DAEA;
+}
+
+
+.icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+}
+
+/* Posiciones específicas */
+.iconTop {
+    top: -6%;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+.iconLeft {
+    top: 50%;
+    left: -16%;
+    transform: translateY(-50%);
+}
+
+.iconBottomRight {
+    bottom: -4%;
+    right: 0;
+}
+
+.collapseContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.collapseContentshow {
+    max-height: 280px;
+    /* ajusta según el contenido */
+}
+
+.circleContainer {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #171A1F;
+}
+
+.bgAlert {
+    background: #3B2D2C;
+    color: #E88C86;
+    border-radius: 8px;
+    width: auto;
+    padding: 5px 10px;
+}

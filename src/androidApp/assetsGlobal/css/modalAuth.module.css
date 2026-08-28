@@ -1,0 +1,18 @@
+.headerModal h4 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.headerModal p {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.iconModal {
+  width: 44px;
+  height: auto;
+  margin-bottom: 20px;
+}
+

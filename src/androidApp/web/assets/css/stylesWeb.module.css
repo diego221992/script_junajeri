@@ -1,0 +1,354 @@
+.fontGlobal {
+    box-sizing: border-box;
+    font-family: "Google Sans Text", sans-serif;
+}
+
+.colorHeader {
+    background: #f0f4f9;
+}
+
+.colorHeaderBody {
+    background: #f0f4f9;
+}
+
+.pHeader {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.truncate {
+    font-size: 22px;
+    color: #505251;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.truncate:hover {
+    text-decoration: underline;
+}
+
+.heightBody {
+    height: 92vh;
+}
+
+.fontBody {
+    font-size: var(--gm3-navigation-rail-label-text-size,.75rem);
+    color: #444746;
+    font-weight: var(--gm3-navigation-rail-label-text-weight,500);
+    letter-spacing: var(--gm3-navigation-rail-label-text-tracking,.00625rem);
+    font-family: var(--gm3-navigation-rail-label-text-font,"Google Sans Flex","Google Sans Text","Google Sans",Roboto,Arial,sans-serif);
+}
+
+.descriptionBody {
+    min-width: 380px;
+    height: 95%;
+}
+
+.descriptionBodyUser {
+    min-width: 250px;
+    height: 95%;
+}
+
+.roundedTopStart {
+    border-top-left-radius: 30px !important;
+}
+
+.fontBodyMoto {
+    font-size: 23px;
+    color: #1f1f1f;
+}
+
+.fontBodySign {
+    font-size: 16px;
+    color: #161616de;
+    font-weight: 500;
+}
+
+.paddingUser {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fontBodyUser {
+    font-size: 14px;
+    color: #041E49;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.imgUser {
+    width: 100%;
+    height: auto;
+}
+
+.link {
+    font-size: 16px;
+    color: #444746;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+
+
+.hoverBtn {
+    border: none;
+    width: 45px;
+    height: 45px;
+    background: #1f1f1f00;
+}
+
+.hoverBtn:hover {
+    background-color: #e2e6eb;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btnSmall{
+    display: none;
+}
+
+.rotate {
+    -webkit-animation: rotate-center 1s linear both;
+    animation: rotate-center 1s linear both;
+}
+
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Estilos específicos para los botones del menú en SectionMain */
+.menuButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: transparent;
+  border: none;
+  transition: background-color 150ms ease, transform 120ms ease;
+}
+
+
+.menuButton.active {
+  background-color: #C2E7FF; /* azul muy claro como en la imagen */
+}
+
+.menuButton img {
+  display: block;
+}
+
+.menuButton:hover {
+  cursor: pointer;
+  background-color: #ced6e27a; /* azul claro al pasar el ratón */
+}
+
+.menuLabel {
+  font-size: 13px;
+  color: #6b6f76; /* gris por defecto */
+  text-align: center;
+}
+
+.menuLabel:hover{
+color: #45474d;
+}
+
+ .active {
+  color: #00639B; /* azul para estado activo */
+  font-weight: 600;
+}
+
+ .headerSmall {
+        z-index: 1;
+    }
+
+/* Asegurar que el botón no muestre outline feo en algunos navegadores */
+.menuButton:focus {
+  outline: none;
+  box-shadow: none;
+}
+/*efecto de desenfoque modal*/
+.bgOpacity{
+    filter: blur(5px);
+}
+
+
+/*efecto del modal*/
+.scaleUpCenter {
+	-webkit-animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+
+@media (max-width: 767.98px) {
+
+    .btnMedium{
+        display: none;
+    }
+    .btnSmall{
+        display: block;
+    }
+
+    .truncate {
+        display: inline-block;
+        /* permitir ancho máximo en elementos inline */
+        max-width: 115px;
+        /* ancho por defecto, ajustable */
+        white-space: nowrap;
+        /* sin saltos de línea */
+        overflow: hidden;
+        /* ocultar el desbordamiento */
+        text-overflow: ellipsis;
+        /* puntos suspensivos */
+        vertical-align: middle;
+    }
+
+    /* En móvil, organizar columnas verticales y colocar el mapa antes de la descripción
+       Ajustar la altura para que el contenido quepa en la pantalla sin provocar scroll
+    */
+    .heightBody {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 100vh;
+        /* ocupar toda la pantalla */
+        height: 100vh;
+        /* fijar altura al viewport */
+        overflow: hidden;
+        /* evitar scroll de la página */
+        padding-bottom: 76px;
+        /* espacio para el menú fijo (ajustable) */
+    }
+
+    /* El div que contiene el mapa suele tener la clase utilitaria w-75; forzarlo arriba */
+    .heightBody>.w-75 {
+        order: 1;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        height: auto;
+    }
+
+    /* Fijar el menú lateral (menuBody) en la parte inferior en móviles */
+    .menuBody {
+        position: fixed !important;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 12px 12px 8px 12px;
+        background: #F0F4F9;
+        /* mantener el colorHeader */
+        z-index: 5000;
+    }
+
+    /* Asegurar que el menú visualmente se mantenga al final (aunque es fixed) */
+    .menuBody {
+        order: 3;
+    }
+
+    .divMaps {
+        z-index: -1;
+    }
+
+    .headerSmall {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    /* Descripción debajo del mapa */
+    .descriptionBody {
+        order: 2;
+        /* justo encima del menú fijo */
+        width: 100% !important;
+        padding-bottom: 50px;
+        /* espacio interno adicional */
+        overflow: auto;
+        /* permitir scroll interno si un bloque supera su área */
+        -webkit-overflow-scrolling: touch;
+        height: 250px;
+    }
+
+    .descriptionBodyUser {
+        order: 2;
+        /* justo encima del menú fijo */
+        width: 100% !important;
+        padding-bottom: 50px;
+        /* espacio interno adicional */
+        overflow: auto;
+        /* permitir scroll interno si un bloque supera su área */
+        -webkit-overflow-scrolling: touch;
+        height: 250px;
+    }
+
+    .imgUser {
+        width: 100%;
+        height: auto;
+    }
+
+    .roundedTopStart {
+        border-top-left-radius: none !important;
+    }
+
+    .colorHeaderBody {
+        background: #ffffff;
+    }
+
+}
