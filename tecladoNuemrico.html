@@ -1,0 +1,72 @@
+<div style="background:#222; padding:18px 8px 8px 8px; border-radius:18px; width:100%; max-width:380px; margin:auto;">
+  <div style="display:flex; gap:8px; margin-bottom:8px;">
+    <button class="key-num">1</button>
+    <button class="key-num">
+      2<br><span class="sub">ABC</span>
+    </button>
+    <button class="key-num">
+      3<br><span class="sub">DEF</span>
+    </button>
+  </div>
+  <div style="display:flex; gap:8px; margin-bottom:8px;">
+    <button class="key-num">
+      4<br><span class="sub">GHI</span>
+    </button>
+    <button class="key-num">
+      5<br><span class="sub">JKL</span>
+    </button>
+    <button class="key-num">
+      6<br><span class="sub">MNO</span>
+    </button>
+  </div>
+  <div style="display:flex; gap:8px; margin-bottom:8px;">
+    <button class="key-num">
+      7<br><span class="sub">PQRS</span>
+    </button>
+    <button class="key-num">
+      8<br><span class="sub">TUV</span>
+    </button>
+    <button class="key-num">
+      9<br><span class="sub">WXYZ</span>
+    </button>
+  </div>
+  <div style="display:flex; gap:8px;">
+    <button class="key-num" style="flex:1;"></button>
+    <button class="key-num" style="flex:1.2;">
+      0
+    </button>
+    <button class="key-num" style="flex:1;">
+      &#9003;
+    </button>
+  </div>
+</div>
+
+<style>
+.key-num {
+  background: #ddd8;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 18px 0 4px 0;
+  flex: 1;
+  margin: 0;
+  outline: none;
+  box-shadow: 0 1px 2px #0006;
+  transition: background 0.1s;
+  text-align: center;
+  position: relative;
+  font-family: system-ui, sans-serif;
+}
+.key-num .sub {
+  display: block;
+  font-size: 0.8rem;
+  color: #fff9;
+  line-height: 1;
+  margin-top: 2px;
+  letter-spacing: 1px;
+}
+.key-num:active {
+  background: #bbb;
+}
+</style>
