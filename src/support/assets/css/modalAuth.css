@@ -1,0 +1,125 @@
+@keyframes zoomInModal {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.modal-zoom {
+  animation: zoomInModal 0.8s ease-in-out;
+  overflow-y :hidden;
+}
+
+
+
+.modal-content {
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.95);
+}
+
+#Slider {
+   border-radius: 6px;
+   position: absolute;
+   top: 100%; 
+   left: 0; 
+   width: 100%;
+}
+
+#SliderDiv {
+  border-radius: 6px;
+  transform: translateY(-128%);
+}
+
+.slide-up,
+.slide-down {
+  overflow: hidden;
+}
+
+.slide-up>div,
+.slide-down>div {
+  transform: translateY(-128%);
+  transition: .4s ease-in-out;
+}
+
+.slide-down>div {
+  transform: translateY(0);
+}
+
+
+.static-size {
+  font-size: 24px; /* Ajusta el tamaño según tus necesidades */
+}
+
+.form-control:focus {
+  box-shadow : none!important;
+ 
+ /* box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);*/
+}
+
+
+#btnAccount {
+  background-color: rgba(243, 248, 249, 0);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: 0;
+  opacity : 0.6;
+
+  
+  /* Posiciona el botón dentro del input text */
+  position: absolute;
+  right: 10px;
+  /*top: 50%;*/
+  transform: translateY(-157%);
+  z-index: 10;
+  transition: transform 0.5s ease-in-out; /* Ajusta la duración y el tipo de transición según sea necesario */
+  /*pointer-events: none;  Evita que el botón interfiera con el input */
+  
+}
+
+#imgNext {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  right: 0px;
+  bottom: 4px;
+}
+
+.char-field:focus{
+  border: 1px solid blue!important;
+}
+
+/*****Efecto para el passcode*********/
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
