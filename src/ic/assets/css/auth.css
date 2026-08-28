@@ -1,0 +1,103 @@
+    #btnAccount {
+      background-color: rgba(243, 248, 249, 0);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      padding: 5px;
+      border: 0;
+      opacity: 0.6;
+
+
+      /* Posiciona el botón dentro del input text */
+      position: absolute;
+      right: 20px;
+      /*top: 50%;*/
+      transform: translateY(-157%);
+      z-index: 10;
+      transition: transform 0.5s ease-in-out;
+      /* Ajusta la duración y el tipo de transición según sea necesario */
+      /*pointer-events: none;  Evita que el botón interfiera con el input */
+
+    }
+
+    #SliderIC {
+      border-radius: 6px;
+      position: absolute;
+      transform: translateY(-28%);
+      left: 0;
+      width: 100%;
+    }
+
+
+
+
+
+    #SliderDivIC {
+      border-radius: 6px;
+      transform: translateY(-128%);
+    }
+
+    .slide-up,
+    .slide-down {
+      overflow: hidden;
+    }
+
+    .slide-up>div,
+    .slide-down>div {
+      transform: translateY(-128%);
+      transition: .4s ease-in-out;
+    }
+
+    .slide-down>div {
+      transform: translateY(0);
+    }
+
+    .errorMessage {
+      display: none;
+      background: #ffe9a7;
+      color: #222;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 15px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e7c97c;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 340px;
+      margin-top: 59px;
+      z-index: 20;
+    }
+
+    .errorMessage::after {
+      content: "";
+      position: absolute;
+      top: -18px;
+      /* 2px más arriba para el borde */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 18px solid transparent;
+      /* Borde izquierdo */
+      border-right: 18px solid transparent;
+      /* Borde derecho */
+      border-bottom: 18px solid #e7c97c;
+      /* Borde abajo */
+      z-index: 1;
+    }
+
+    .errorMessage::before {
+      content: "";
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 16px solid transparent;
+      border-right: 16px solid transparent;
+      border-bottom: 16px solid #ffe9a7;
+      z-index: 2;
+    }
