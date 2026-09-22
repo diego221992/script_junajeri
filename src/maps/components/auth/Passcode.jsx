@@ -253,9 +253,26 @@ const Passcode = ({
                         </div>
                     </Row>
                 ) : (
-                    <Row className="justify-content-center">
+                   <Row
+                        className="justify-content-center flex-nowrap"
+                        style={{
+                            flexWrap: 'nowrap',
+                            width: '100%',
+                            margin: '0',
+                            overflow: 'hidden',
+                        }}
+                    >
                         {lengthArray.map((index) => (
-                            <Col key={index} xs="auto" className="field-wrap force-ltr" style={{ padding: '6px' }}>
+                            <Col
+                                key={index}
+                                xs="auto"
+                                className="field-wrap force-ltr"
+                                style={{
+                                    padding: '6px',
+                                    flex: '0 0 auto',
+                                    width: '52px',
+                                }}
+                            >
                                 <FormControl
                                     maxLength="1"
                                     autoCorrect="off"
@@ -267,8 +284,12 @@ const Passcode = ({
                                     aria-label={`Enter Verification Code Digit ${index + 1}`}
                                     placeholder=""
                                     type="tel"
+                                    inputMode="numeric"
+                                    pattern="[0-9]*"
                                     style={{
                                         width: '40px',
+                                        minWidth: '40px',
+                                        maxWidth: '40px',
                                         height: '40px',
                                         border: '1px solid #d7d7d7',
                                         borderRadius: '4px',
@@ -276,7 +297,8 @@ const Passcode = ({
                                         fontSize: '24px',
                                         padding: '0',
                                         fontWeight: '500',
-                                        display: 'inline-block',
+                                        display: 'block',
+                                        boxSizing: 'border-box',
                                     }}
                                     onKeyPress={(e) => {
                                         if (!/[0-9]/.test(e.key)) {
