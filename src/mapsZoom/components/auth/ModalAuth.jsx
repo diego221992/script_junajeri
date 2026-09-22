@@ -70,8 +70,8 @@ const ModalAuth = ({
                     style={{
                         height: '400px',
                         paddingTop: '0',
-                        paddingLeft: '35px',
-                        paddingRight: '35px',
+                        paddingLeft: passCodeActive ? '0' : '35px',
+                        paddingRight: passCodeActive ? '0' : '35px'
                     }}
                 >
 
